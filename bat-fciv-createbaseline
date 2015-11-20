@@ -1,0 +1,8 @@
+@echo off
+@cd %~dp0
+@fciv c:\ -r -type *.exe -xml %computername%.xml
+@fciv c:\ -r -type *.dll -xml %computername%.xml
+@fciv c:\ -r -type *.bat -xml %computername%.xml
+@fciv c:\ -r -type *.com -xml %computername%.xml
+@fciv c:\ -r -type *.cmd -xml %computername%.xml
+@copy -Y %computername%.xml z:\backups\hash\
