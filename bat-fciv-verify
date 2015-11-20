@@ -1,0 +1,4 @@
+@echo off
+@cd %~dp0
+@fciv -v %computername%.xml >> %computername%.log
+@copy -Y %computername%.log z:\backups\hash
